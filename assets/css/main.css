@@ -892,7 +892,7 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     grid-column: none;
   }
 }
-.profile img {
+.about .profile img {
   max-width: 150px;
   width: auto;
   height: auto;
