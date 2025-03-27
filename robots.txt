@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://nagooon.github.io/sitemap.xml
