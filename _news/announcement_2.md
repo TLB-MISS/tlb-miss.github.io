@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I joined MS/PhD program at [Visual Computing Lab](https://jhugestar.github.io/) in, SNU.
+I joined the MS/PhD program at [Visual Computing Lab](https://jhugestar.github.io/), SNU.

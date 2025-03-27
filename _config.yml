@@ -264,8 +264,8 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: Beak
-  first_name: Sangwon
+  last_name: [Beak]
+  first_name: [Sangwon]
 
   style: apa
   locale: en
