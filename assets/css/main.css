@@ -892,9 +892,9 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     grid-column: none;
   }
 }
-img[src="/assets/img/photo.jpg"] {
+img.img-fluid.z-depth-1.rounded-circle {
   max-width: 150px !important;
-  width: auto !important;
+  width: 150px !important;
   height: auto !important;
 }
 
