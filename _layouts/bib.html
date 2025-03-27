@@ -111,6 +111,7 @@
         </div>
 
         <!-- Journal/Book title and date -->
+        {% comment %}
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
         {% if entry.type == "article" -%}
@@ -136,6 +137,31 @@
         <div class="periodical">
           {{ entry.note | strip }}
         </div>
+        {% endcomment %}
+        
+        {% if entry.conf or entry.year or entry.bold %}
+          <div class="periodical">
+            <!-- 1) conf와 year는 이탤릭으로 -->
+            <em>
+              {% if entry.conf %}
+                {{ entry.conf }}
+              {% endif %}
+              {% if entry.conf and entry.year %}
+                <!-- conf와 year 사이에 공백 -->
+                &nbsp;
+              {% endif %}
+              {% if entry.year %}
+                {{ entry.year }}
+              {% endif %}
+            </em>
+
+            <!-- 2) bold가 있으면, ', ' 뒤에 빨간 굵은 글씨로 표시 -->
+            {% if entry.bold %}
+              , <strong style="color:red;">{{ entry.bold }}</strong>
+            {% endif %}
+          </div>
+        {% endif %}
+
 
           <!-- Links/Buttons -->
           <div class="links">
