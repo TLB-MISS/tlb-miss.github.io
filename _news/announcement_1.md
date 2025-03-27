@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I received my Bachelor's degree from SNU!
+I received my Bachelor's degree from SNU.
