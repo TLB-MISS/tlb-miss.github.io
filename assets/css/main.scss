@@ -14,7 +14,7 @@ $max-content-width: {{ site.max_width }};
   "distill"
 ;
 
-.about .profile img {
+img[src="/assets/img/photo.jpg"] {
   max-width: 150px !important;
   width: auto !important;
   height: auto !important;
