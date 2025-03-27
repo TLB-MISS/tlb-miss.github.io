@@ -14,8 +14,8 @@ $max-content-width: {{ site.max_width }};
   "distill"
 ;
 
-img[src="/assets/img/photo.jpg"] {
+img.img-fluid.z-depth-1.rounded-circle {
   max-width: 150px !important;
-  width: auto !important;
+  width: 150px !important;
   height: auto !important;
 }
