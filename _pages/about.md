@@ -6,7 +6,7 @@ subtitle: M.S./Ph.D. student in Visual Computing Lab at SNU
 
 profile:
   align: right
-  image: photo.png
+  image: photo.jpg
   image_circular: false # crops the image to make it circular
 
 news: true  # includes a list of news items
