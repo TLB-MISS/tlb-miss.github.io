@@ -5,3 +5,22 @@ kim:
 joo:
   - firstname: ["Hanbyul"]
     url: https://jhugestar.github.io/
+
+lee:
+  - firstname: ["Yejin"]
+
+  - firstname: ["Jae W."]
+
+  - firstname: ["Hyunseung"]
+
+choi:
+  - firstname: ["Hyunji"]
+
+min:
+  - firstname: ["Sunhong"]
+
+Jeong:
+  - firstname: ["Dawoon"]
+
+Ham:
+  - firstname: ["TaeJun"]
