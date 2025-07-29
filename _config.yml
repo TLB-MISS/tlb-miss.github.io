@@ -5,7 +5,7 @@
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Sangwon
 middle_name: 
-last_name: Beak
+last_name: Baik
 email: bsw1907@snu.ac.kr
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -264,7 +264,7 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: [beak]
+  last_name: [baik]
   first_name: [Sangwon]
 
   style: apa
