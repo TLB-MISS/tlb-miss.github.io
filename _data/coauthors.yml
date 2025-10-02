@@ -5,3 +5,15 @@ kim:
 joo:
   - firstname: ["Hanbyul"]
     url: https://jhugestar.github.io/
+
+na:
+  - firstname: ["Jeonghyeon"]
+    url: https://nagooon.github.io/
+
+lee:
+  - firstname: ["Inhee"]
+    url: https://blog.sulwon.com/
+
+lee:
+  - firstname: ["Junyoung"]
+    url: https://junc0ng.github.io/
