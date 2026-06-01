@@ -1,7 +1,7 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-      <div class="row">
+      <div class="row publication-entry" data-lead-author="{% if entry.lead_author %}true{% else %}false{% endif %}">
         <div class="col-sm-4 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
@@ -215,9 +215,21 @@
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Project Page</a>
           {%- endif %}
           </div>
-          {% if site.badges %}
+          {% assign show_altmetric_badge = false %}
+          {% if site.badges.altmetric_badge %}
+            {% if entry.eprint or entry.doi or entry.altmetric or entry.pmid or entry.isbn %}
+              {% assign show_altmetric_badge = true %}
+            {% endif %}
+          {% endif %}
+          {% assign show_dimensions_badge = false %}
+          {% if site.badges.dimensions_badge %}
+            {% if entry.doi or entry.pmid or entry.dimensions %}
+              {% assign show_dimensions_badge = true %}
+            {% endif %}
+          {% endif %}
+          {% if show_altmetric_badge or show_dimensions_badge %}
           <div class="badges">
-            {%- if site.badges.altmetric_badge %}
+            {%- if show_altmetric_badge %}
             <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"
               {% if entry.eprint %}
                 data-arxiv-id="{{ entry.eprint }}"
@@ -232,13 +244,13 @@
               {% endif %}
               ></span>
             {%- endif %}
-            {%- if site.badges.dimensions_badge %}
+            {%- if show_dimensions_badge %}
               <span class="__dimensions_badge_embed__"
               {% if entry.doi %}
                 data-doi="{{ entry.doi }}"
-              {% else if entry.pmid %}
+              {% elsif entry.pmid %}
                 data-pmid="{{ entry.pmid }}"
-              {% else %}
+              {% elsif entry.dimensions %}
                 data-id="{{ entry.dimensions }}"
               {% endif %}
               data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>

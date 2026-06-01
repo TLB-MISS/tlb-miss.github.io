@@ -8,4 +8,31 @@ $(document).ready(function() {
         $(this).parent().parent().find(".abstract.hidden.open").toggleClass('open');
     });
     $('a').removeClass('waves-effect waves-light');
+
+    $('[data-publication-filter]').each(function() {
+        const container = $(this);
+        const buttons = container.find('[data-publication-filter-button]');
+        const items = container.find('ol.bibliography > li');
+
+        function setPublicationFilter(filter) {
+            buttons.each(function() {
+                const button = $(this);
+                const isActive = button.data('publication-filter-button') === filter;
+                button.toggleClass('active', isActive);
+                button.attr('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            items.each(function() {
+                const item = $(this);
+                const isLeadAuthor = item.find('.publication-entry').data('lead-author') === true;
+                item.prop('hidden', filter === 'lead' && !isLeadAuthor);
+            });
+        }
+
+        buttons.click(function() {
+            setPublicationFilter($(this).data('publication-filter-button'));
+        });
+
+        setPublicationFilter('all');
+    });
 });

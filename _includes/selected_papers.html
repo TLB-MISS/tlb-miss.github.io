@@ -1,5 +1,11 @@
 
-          <div class="publications">
-          <h2>Selected Publications</h2>
-            {% bibliography -f papers -q @*[selected=true]* %}
+          <div class="publications" data-publication-filter>
+            <div class="publication-heading">
+              <h2>Publications</h2>
+              <div class="publication-tabs" role="tablist" aria-label="Publication filter">
+                <button class="publication-tab active" type="button" role="tab" aria-selected="true" data-publication-filter-button="all">All Publications</button>
+                <button class="publication-tab" type="button" role="tab" aria-selected="false" data-publication-filter-button="lead">Lead-Author Publications</button>
+              </div>
+            </div>
+            {% bibliography -f papers -q @* %}
           </div>
