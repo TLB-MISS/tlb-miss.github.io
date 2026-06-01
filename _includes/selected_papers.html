@@ -1,11 +1,8 @@
 
           <div class="publications" data-publication-filter>
-            <div class="publication-heading">
-              <h2>Publications</h2>
-              <div class="publication-tabs" role="tablist" aria-label="Publication filter">
-                <button class="publication-tab active" type="button" role="tab" aria-selected="true" data-publication-filter-button="all">All Publications</button>
-                <button class="publication-tab" type="button" role="tab" aria-selected="false" data-publication-filter-button="lead">Lead-Author Publications</button>
-              </div>
+            <div class="publication-tabs publication-heading-tabs" role="tablist" aria-label="Publication filter">
+              <button class="publication-tab active" type="button" role="tab" aria-selected="true" data-publication-filter-button="all">All Publications</button>
+              <button class="publication-tab" type="button" role="tab" aria-selected="false" data-publication-filter-button="first">1st Author Publications</button>
             </div>
             {% bibliography -f papers -q @* %}
           </div>

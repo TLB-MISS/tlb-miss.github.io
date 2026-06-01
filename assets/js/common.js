@@ -24,8 +24,8 @@ $(document).ready(function() {
 
             items.each(function() {
                 const item = $(this);
-                const isLeadAuthor = item.find('.publication-entry').data('lead-author') === true;
-                item.prop('hidden', filter === 'lead' && !isLeadAuthor);
+                const isFirstAuthor = item.find('.publication-entry').data('first-author') === true;
+                item.prop('hidden', filter === 'first' && !isFirstAuthor);
             });
         }
 

@@ -534,37 +534,23 @@ footer.sticky-bottom {
 .publications {
   margin-top: 2rem;
 
-  .publication-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-
-    h2 {
-      margin-bottom: 0;
-    }
-  }
-
   .publication-tabs {
     display: inline-flex;
-    gap: 0.125rem;
-    padding: 0.125rem;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 6px;
-    background-color: var(--global-card-bg-color);
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--global-divider-color);
   }
 
   .publication-tab {
     border: 0;
-    border-radius: 4px;
+    border-bottom: 2px solid transparent;
     background: transparent;
     color: var(--global-text-color);
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     line-height: 1.4;
-    padding: 0.35rem 0.7rem;
+    padding: 0 0 0.45rem;
     white-space: nowrap;
 
     &:hover,
@@ -578,8 +564,8 @@ footer.sticky-bottom {
     }
 
     &.active {
-      background-color: var(--global-theme-color);
-      color: $white-color;
+      border-bottom-color: var(--global-theme-color);
+      color: var(--global-theme-color);
     }
   }
 
@@ -753,16 +739,14 @@ footer.sticky-bottom {
 
 @media (max-width: 576px) {
   .publications {
-    .publication-heading {
-      align-items: stretch;
-    }
-
     .publication-tabs {
       width: 100%;
+      gap: 0.75rem;
     }
 
     .publication-tab {
       flex: 1 1 0;
+      font-size: 1.15rem;
       white-space: normal;
     }
   }

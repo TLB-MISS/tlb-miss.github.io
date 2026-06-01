@@ -1,7 +1,7 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-      <div class="row publication-entry" data-lead-author="{% if entry.lead_author %}true{% else %}false{% endif %}">
+      <div class="row publication-entry" data-first-author="{% if entry.first_author %}true{% else %}false{% endif %}">
         <div class="col-sm-4 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}

@@ -13,6 +13,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 education: false
+math: false
 ---
 
 I am a MS/PhD student at [Seoul National University(SNU)](https://www.snu.ac.kr/), advised by [Hanbyul Joo](https://jhugestar.github.io/). I am interested in the field of 3D computer vision, especially modeling humans and objects in 3D space.
