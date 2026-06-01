@@ -183,17 +183,14 @@
           <!-- Selected papers -->
           
           <div class="publications" data-publication-filter>
-            <div class="publication-heading">
-              <h2>Publications</h2>
-              <div class="publication-tabs" role="tablist" aria-label="Publication filter">
-                <button class="publication-tab active" type="button" role="tab" aria-selected="true" data-publication-filter-button="all">All Publications</button>
-                <button class="publication-tab" type="button" role="tab" aria-selected="false" data-publication-filter-button="lead">Lead-Author Publications</button>
-              </div>
+            <div class="publication-tabs publication-heading-tabs" role="tablist" aria-label="Publication filter">
+              <button class="publication-tab active" type="button" role="tab" aria-selected="true" data-publication-filter-button="all">All Publications</button>
+              <button class="publication-tab" type="button" role="tab" aria-selected="false" data-publication-filter-button="first">1st Author Publications</button>
             </div>
             <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row publication-entry" data-lead-author="true">
+      <div class="row publication-entry" data-first-author="true">
         <div class="col-sm-4 preview">
 <figure>
 
@@ -266,7 +263,7 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row publication-entry" data-lead-author="true">
+      <div class="row publication-entry" data-first-author="true">
         <div class="col-sm-4 preview">
 <figure>
 
@@ -340,7 +337,7 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row publication-entry" data-lead-author="true">
+      <div class="row publication-entry" data-first-author="true">
         <div class="col-sm-4 preview">
 <figure>
 
@@ -414,7 +411,7 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row publication-entry" data-lead-author="true">
+      <div class="row publication-entry" data-first-author="true">
         <div class="col-sm-4 preview">
 <figure>
 
@@ -488,7 +485,7 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row publication-entry" data-lead-author="false">
+      <div class="row publication-entry" data-first-author="false">
         <div class="col-sm-4 preview">
 <figure>
 
@@ -562,7 +559,7 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row publication-entry" data-lead-author="false">
+      <div class="row publication-entry" data-first-author="false">
         <div class="col-sm-4 preview">
 <figure>
 
@@ -689,16 +686,7 @@
 
     
 
-    <!-- MathJax -->
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        tags: 'ams'
-      }
-    };
-  </script>
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
 
     
     
