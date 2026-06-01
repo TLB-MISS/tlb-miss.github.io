@@ -542,15 +542,13 @@ footer.sticky-bottom {
   }
 
   .publication-tab {
+    appearance: none;
     border: 0;
     border-bottom: 2px solid transparent;
     background: transparent;
     color: var(--global-text-color);
     cursor: pointer;
-    font-family: inherit;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.2;
+    font: inherit;
     padding: 0 0 0.45rem;
     white-space: nowrap;
 
@@ -747,7 +745,6 @@ footer.sticky-bottom {
 
     .publication-tab {
       flex: 1 1 0;
-      font-size: 1.5rem;
       white-space: normal;
     }
   }
