@@ -1,6 +1,8 @@
 kim:
   - firstname: ["Hyeonwoo"]
     url: https://www.sshowbiz.xyz/
+  - firstname: ["Sungjoo"]
+    url: https://junesjukim.github.io/
   - firstname: ["Gunhee"]
     url: https://gunhee1113.github.io/
 
@@ -21,3 +23,7 @@ lee:
 choi:
   - firstname: ["Mingi"]
     url: https://willi19.github.io/
+
+cha:
+  - firstname: ["Hyunsoo"]
+    url: https://hyunsoocha.github.io/
